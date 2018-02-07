@@ -74,6 +74,8 @@ This script will check the block heights of all listed servers.  It will attempt
 2. `wget https://raw.githubusercontent.com/Stoner19/ONZCoinScripts/master/control.sh`
 3. `bash control.sh startm` - Start management script
 
+* for testnet branch `git clone -b testnet https://github.com/Stoner19/ONZCoinScripts.git`
+
 To check the logs and what the script is going:
 
 * `tail -f manage.log`
