@@ -11,7 +11,7 @@ CONFIG_FILE="config.json"
 CONFIGFILE=$(cat "$CONFIG_FILE")
 ##SECRET=$( echo "$CONFIGFILE" | jq -r '.secret') ## Uncomment this line if you want this script to re-enable forging when done.  Should only do this if you only have one node and no other scripts running
 LDIRECTORY=$( echo "$CONFIGFILE" | jq -r '.onz_directory')
-SRV=127.0.0.1:10000
+SRV=127.0.0.1:11000
 
 # Set colors
 red=`tput setaf 1`
