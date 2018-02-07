@@ -1,6 +1,6 @@
 {
-	"port":":11000",
-	"https_port":":11001",
+	"port":":10998",
+	"https_port":":10999",
 	"onz_directory":"~/onz",
 	"pbk":"YOUR PUBLIC KEY",
 	"secret":"YOUR SECRET",
