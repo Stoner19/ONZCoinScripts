@@ -49,11 +49,11 @@ function SyncState()
 		result=`curl -s "http://$SRV/api/loader/status/sync"| jq '.syncing'`
 		sleep 2
 		## Check that onz is running still and didn't crash when trying to resync
-		STATUS="$(bash onz_manager.bash status | grep '√ ONZ is running.')"
+		STATUS="$(bash onz_manager.bash status | grep '√ onz is running.')"
 		if [[ -z "$STATUS" ]];
 		then
 			sleep 90 ## Wait 90 seconds to make sure onz isn't just down for a rebuild
-			STATUS="$(bash onz_manager.bash status | grep '√ ONZ is running.')"
+			STATUS="$(bash onz_manager.bash status | grep '√ onz is running.')"
 			if [[ -z "$STATUS" ]];
 			then
 				date +"%Y-%m-%d %H:%M:%S || ${red}WARNING: onz does not seem to be running.  Trying a stop and start.${resetColor}"
@@ -224,11 +224,11 @@ local_height() {
 ChangeDirectory  ## Enter onz directory
 while true; do
 	## Check that onz is running first!!
-	STATUS="$(bash onz_manager.bash status | grep '√ ONZ is running.')"
+	STATUS="$(bash onz_manager.bash status | grep '√ onz is running.')"
 	if [[ -z "$STATUS" ]];
 	then
 		sleep 90 ## Wait 90 seconds to make sure onz isn't just down for a rebuild
-		STATUS="$(bash onz_manager.bash status | grep '√ ONZ is running.')"
+		STATUS="$(bash onz_manager.bash status | grep '√ onz is running.')"
 		if [[ -z "$STATUS" ]];
 		then
 			date +"%Y-%m-%d %H:%M:%S || ${red}WARNING: onz does not seem to be running.  Trying a stop and start.${resetColor}"
