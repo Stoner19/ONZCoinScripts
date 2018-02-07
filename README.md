@@ -81,5 +81,4 @@ To check the logs and what the script is going:
 * `tail -f manage.log`
 * `bash control.sh logs` (requires multitail)
 
-*Donation Address: 3532362465127676136L*
-# ONZCoinScripts
+*LISK Donation Address for mrV777: 3532362465127676136L*
