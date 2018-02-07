@@ -1,0 +1,17 @@
+{
+	"port":":11000",
+	"https_port":":11001",
+	"onz_directory":"~/onz",
+	"pbk":"YOUR PUBLIC KEY",
+	"secret":"YOUR SECRET",
+	"manage_servers": [
+		"xxx.xxx.xxx.xxx",
+		"xxx.xxx.xxx.xxx",
+		"xxx.xxx.xxx.xxx"
+	  ],
+	"srv1":"localhost",
+	"servers": [
+		"xxx.xxx.xxx.xxx",
+		"xxx.xxx.xxx.xxx"
+	  ]
+}
